@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Moto Camping</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./logo.jpeg" alt="motocamping logo" />
+      </div>
+      <nav class="navbar">
+        <div>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#activities">Kegiatan</a></li>
+            <li><a href="#contact">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <i data-feather="menu">menu</i>
+          <!-- Ikon menu dari Feather Icons -->
+        </div>
+      </nav>
+    </header>
+    <section class="hero" id="home">
+      <h1>Selamat Datang Pecinta MotoCamping</h1>
+      <p>
+        Ruang Komunitas Motocamping: Menyatukan Pencinta Petualangan dan Kemah
+        dengan Sepeda Motor
+      </p>
+    </section>
+    <section id="about">
+      <div class="about-container">
+        <h2>Tentang Kami</h2>
+        <p>
+          Di Ruang Komunitas Motocamping, kami adalah para penggemar sepeda
+          motor yang juga memiliki kecintaan yang mendalam terhadap kemah di
+          alam terbuka. Kami percaya bahwa setiap perjalanan dengan sepeda motor
+          adalah petualangan yang menakjubkan, dan kemah menambahkan sentuhan
+          magis yang tak terlupakan pada pengalaman tersebut. Dari pemula hingga
+          veteran, dari jalan raya hingga jalan tanah, kami menyambut semua
+          orang yang ingin berbagi semangat kami.
+        </p>
+      </div>
+    </section>
+
+    <section class="activities">
+      <h2>Kegiatan</h2>
+      <div class="activity-container">
+        <div class="activity">
+          <img src="./content-1.jpeg" alt="gambar 1" />
+          <p>
+            Berinteraksi dengan anggota lainnya dalam forum kami, bertukar
+            cerita petualangan, tips berkemah, dan saran tentang toolkit.
+          </p>
+        </div>
+        <div class="activity">
+          <img src="./content-2.jpeg" alt="gambar 2" />
+          <p>
+            Kami secara teratur mengadakan perjalanan kelompok yang memungkinkan
+            anggota untuk menjelajahi destinasi menarik bersama-sama.
+          </p>
+        </div>
+        <div class="activity">
+          <img src="./content-3.jpeg" alt="gambar 3" />
+          <p>
+            Kami mengadakan coaching clinic tentang berbagai topik yang relevan
+            dengan motocamping, mulai dari keterampilan dasar berkemah hingga
+            perawatan sepeda motor.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-container">
+        <div class="left">
+          <div class="left-container"></div>
+          <h2>Hubungi Kami</h2>
+          <p>
+            Jika Anda memiliki pertanyaan atau ingin bergabung dengan kami,
+            silakan hubungi kami melalui formulir di bawah ini:
+          </p>
+        </div>
+        <form>
+          <label for="name">Nama:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Dementor"
+            required
+          />
+          <label for="gender"
+            >Jenis Kelamin:<input
+              type="radio"
+              name="gender"
+              value="male"
+            />Pria<input
+              type="radio"
+              name="gender"
+              value="female"
+            />Wanita</label
+          >
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="subscribeCheckbox"
+              name="subscribe"
+              value="yes"
+            />
+            <label for="subscribeCheckbox">Berlangganan Newsletter</label>
+          </div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="dementor@hogwart.com"
+            required
+          />
+          <label for="message">Pesan:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tulis Pesan"
+            required
+          ></textarea>
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 - Dimas Adhi Pratama</p>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </body>
+</html>

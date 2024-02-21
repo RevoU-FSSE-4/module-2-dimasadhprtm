@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "ptsans";
+  src: url("PTS55F.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "ptsans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  border-bottom: 1px solid;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.navbar {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+a:hover {
+  color: grey;
+}
+
+.menu-toggle {
+  display: none; /* Sembunyikan tombol hamburger pada tampilan desktop */
+  cursor: pointer;
+}
+
+.hero {
+  margin: 20px;
+  padding: 20px;
+}
+
+.about-container {
+  margin: 20px;
+  padding: 20px;
+  text-shadow: rgb(101, 100, 96) 1px 0 10px;
+}
+
+.activity-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.activity {
+  flex: 1;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.activities h2 {
+  margin: 20px;
+  padding: 20px;
+}
+
+.activity img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.activity p {
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 100px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label,
+form textarea,
+form input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Menampilkan tombol hamburger pada tampilan responsif */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-right: 20px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  nav ul li {
+    margin: 0;
+    text-align: center;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+}
+
+/* Media queries untuk tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+    font-size: ;
+  }
+
+  .activity-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .activity {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .activity img {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Media queries untuk handphone */
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin-right: 8px;
+  }
+
+  .activity-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .activity {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .activity img {
+    width: auto;
+    height: auto;
+  }
+}
