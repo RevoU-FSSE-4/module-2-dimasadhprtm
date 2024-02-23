@@ -21,8 +21,8 @@ Website akan dibuat dalam beberapa tampilan agar responsive ketika dibuka melalu
 
 <br>
 
-#### Ini adalah link project yang sudah deploy menggunakan vercel : https://module-1-dimasadhprtm-jwz22i162-dimas-adhi-pratamas-projects.vercel.app/
+#### Ini adalah link project yang sudah deploy menggunakan vercel : https://module-2-dimasadhprtm-p1sv.vercel.app/
 
 #### Berikut Contoh Gambar yang akan diisi pada halaman website
 
-![motocamping](./motocamping_readme.webp)
+![motocamping](./img/motocamping_readme.jpg)
